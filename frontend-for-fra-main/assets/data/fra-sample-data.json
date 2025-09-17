@@ -1,0 +1,56 @@
+{
+  "claims": [
+    {
+      "claimId": "CFR-MH-GAD-001",
+      "applicantName": "Gond Community Gram Sabha",
+      "claimType": "Community Forest Rights (CFR)",
+      "state": "Maharashtra",
+      "district": "Gadchiroli",
+      "taluka": "Dhanora",
+      "village": "Mendha (Lekha)",
+      "areaClaimedHectares": 1800.50,
+      "status": "Approved",
+      "submissionDate": "2010-05-15",
+      "location": {
+        "lat": 20.2458,
+        "lon": 80.1245
+      },
+      "documents": ["Application.pdf", "GramSabhaResolution.pdf", "Map.jpg"]
+    },
+    {
+      "claimId": "IFR-OD-KLH-002",
+      "applicantName": "Rani Majhi",
+      "claimType": "Individual Forest Rights (IFR)",
+      "state": "Odisha",
+      "district": "Kalahandi",
+      "taluka": "Lanjigarh",
+      "village": "Basantapada",
+      "areaClaimedHectares": 1.75,
+      "status": "Pending",
+      "submissionDate": "2023-11-20",
+      "location": {
+        "lat": 19.8374,
+        "lon": 83.3718
+      },
+      "documents": ["Form_A.pdf", "Aadhaar.pdf", "LandProof.pdf"]
+    },
+    {
+      "claimId": "IFR-JH-GML-003",
+      "applicantName": "Soma Munda",
+      "claimType": "Individual Forest Rights (IFR)",
+      "state": "Jharkhand",
+      "district": "Gumla",
+      "taluka": "Bishunpur",
+      "village": "Netarhat",
+      "areaClaimedHectares": 2.10,
+      "status": "Rejected",
+      "rejectionReason": "Insufficient evidence of occupation prior to 2005",
+      "submissionDate": "2022-01-30",
+      "location": {
+        "lat": 23.4842,
+        "lon": 84.2694
+      },
+      "documents": ["Form_A.pdf"]
+    }
+  ]
+}

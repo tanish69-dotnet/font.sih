@@ -1,0 +1,103 @@
+/* =================================== */
+/* === Responsive Design Breakpoints === */
+/* =================================== */
+
+/* --- Tablet View --- */
+/* Applies to screens 992px wide or less */
+/* === Mobile Menu Backdrop === */
+.mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Below the sidebar, above the content */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.mobile-menu-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width: 992px) {
+    :root {
+        --sidebar-width: 240px; /* Slightly reduce sidebar width */
+    }
+
+    .app-container {
+        /* Change to a single column layout */
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        /* Position sidebar to slide in/out */
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1000; /* Ensure it's on top of other content */
+        transform: translateX(-100%); /* Start hidden off-screen */
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .sidebar.show {
+        /* This class will be toggled by JavaScript */
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        /* Show the hamburger menu button */
+        display: block;
+    }
+}
+
+
+/* --- Mobile View --- */
+/* Applies to screens 768px wide or less */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-content {
+        padding: 0 1rem; /* Reduce header padding */
+        gap: 1rem;
+    }
+    
+    .main-content {
+        padding: 1.5rem 1rem; /* Reduce main content padding */
+    }
+
+    .branding .ministry-name {
+        /* Hide the ministry name on smaller screens to save space */
+        display: none;
+    }
+
+    .search-bar input {
+        width: 180px; /* Shrink the search bar */
+    }
+
+    .header-right {
+        gap: 1rem; /* Reduce gap between right-side icons */
+    }
+}
+
+
+/* --- Small Mobile View --- */
+/* Applies to screens 576px wide or less */
+@media (max-width: 576px) {
+    .search-bar {
+        /* On very small screens, you might hide the search bar completely */
+        /* or replace it with just an icon */
+        display: none; 
+    }
+
+    .user-auth span {
+        /* Hide the "Admin" text, leaving only the avatar */
+        display: none;
+    }
+}

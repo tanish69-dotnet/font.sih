@@ -1,0 +1,138 @@
+/* === login.css === */
+/* Styles for the Authentication Page and Header User Menu */
+
+
+/* === Main Login Page Container === */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--content-bg, #f4f7f6);
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+/* === Login Form Box === */
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    background-color: var(--header-bg, #ffffff);
+    border: 1px solid var(--border-color, #dee2e6);
+    border-radius: var(--card-border-radius, 8px);
+    box-shadow: var(--shadow, 0 4px 12px rgba(0,0,0,0.08));
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.login-box h2 {
+    font-size: 1.8rem;
+    color: var(--text-color-dark, #343a40);
+    margin-bottom: 0.5rem;
+}
+
+.login-box p {
+    margin-bottom: 2rem;
+    color: var(--text-color-muted, #6c757d);
+}
+
+
+/* === Form Elements === */
+.login-box .form-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color-dark, #343a40);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--border-color, #dee2e6);
+    background-color: var(--content-bg, #f4f7f6);
+    color: var(--text-color-dark, #343a40);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: var(--primary-color, #0d6efd);
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.login-box .error-message {
+    color: var(--danger-color, #dc3545);
+    min-height: 1.2em; /* Reserve space to prevent layout shift */
+    font-size: 0.9rem;
+    margin-top: -1rem;
+    text-align: left;
+}
+
+
+/* === Header User Menu Dropdown === */
+.user-menu-container {
+    position: relative;
+}
+.user-avatar-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.user-dropdown-menu {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: var(--header-bg);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    min-width: 150px;
+    z-index: 100;
+    display: none;
+    border: 1px solid var(--border-color);
+    overflow: hidden; /* Ensures child border-radius is respected */
+}
+.user-menu-container:hover .user-dropdown-menu {
+    display: block;
+}
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--text-color-dark);
+}
+.dropdown-item:hover {
+    background-color: var(--content-bg);
+}
+
+/* === Responsive adjustments for smaller screens === */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem 1.5rem;
+    }
+}

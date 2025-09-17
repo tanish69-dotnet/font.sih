@@ -1,0 +1,21 @@
+{
+  "name": "FRA Management System",
+  "short_name": "FRA System",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#212529",
+  "description": "A comprehensive system to manage claims under the Forest Rights Act.",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

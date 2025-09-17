@@ -1,0 +1,53 @@
+/* === reports.css === */
+.report-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.report-form-grid select {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.report-display-area {
+    margin-top: 1.5rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow);
+}
+
+.report-actions {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    gap: 1rem;
+}
+
+#report-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+#report-content p {
+    color: var(--text-color-muted);
+    margin-bottom: 1.5rem;
+}
+#report-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+#report-content th, #report-content td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+#report-content th {
+    background-color: #f8f9fa;
+}
